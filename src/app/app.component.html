@@ -1,0 +1,17 @@
+
+<div class='scaleContainer'>
+  <div class='centeredScale'>
+    <div class='scaleBox'>
+      <div class='scaleHeader'>
+        <span class='paceText'>Pace(min/mile)</span>
+      </div>
+      <div class='rangeBox'>
+        <div>
+          <span>{{range.min}} </span>
+          <span *ngFor="let color of scale" [style.background-color]="color" style="display: inline-block; width: 10px; height: 10px;"></span>
+          <span> {{range.max}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
