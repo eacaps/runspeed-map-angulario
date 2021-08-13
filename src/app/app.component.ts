@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// @ts-ignore
+import Utils from '../utils';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'runspeed-map-angular2';
+  range = Utils.getSpeedRange();
+  scale = Utils.getColorScale();
 }
